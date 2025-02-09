@@ -50,7 +50,7 @@ class moving_platform
 void update_platform_sound()
     {
         platpool.update_sound_2d(platsound, currentx, currenty);
-        platpool.update_sound_range_2d(platsound, 0, maxx - minx, 0, maxy - miny);
+        platpool.update_sound_range_2d(platsound, 0, currentx, 0, currentx + sizex);
     }
 
     bool is_on_platform()
